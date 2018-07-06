@@ -1,0 +1,25 @@
+1. For MotionData.txt, it stores the coordinates of 25 joints.
+x1, y1, z1 (frame 1)
+x2, y2, z2
+...
+x25, y25, z25
+x1, y1, z1 (frame 2)
+...
+
+
+2. For ControlData.txt, it stores all the rotation info.
+
+Initial data, see Awake(), 32 lines.
+	initialPosition (x, y, z)
+	initialRotation (w, x, y, z)
+	offsetNodePos (x, y, z)
+	offsetNodeRot (w, x, y, z)
+	bodyRootPositiion (x, y, z)
+	initialRotations (w, x, y, z) 27 lines
+
+Data for each frame, see UpdateAvatar(), 18 lines for each frame.
+	UserPosition (x, y, z), see MoveAvatar()
+	JointOrientation (w, x, y, z), 15 lines, see TransformBone().
+	JointDirection, 2 lines, see TransformSpecialBone().
+
+

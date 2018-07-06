@@ -1,0 +1,32 @@
+The Guidance.txt file stores the user's error in each frame.
+
+line 1: overall score
+
+line 2 ~ line k: all types of guidance/criterion used in this exercise
+line k+1: 0 (indicates ending)
+
+from line k+2:
+type 1 of criterion (e.g., the patient had error on 2 criteria in frame 1)
+error for criterion 1
+type 2 of criterion 
+error for criterion 2
+0 (indicates the end of this frame)
+0 (patient had no error in frame 2)
+0 (patient had no error in frame 3)
+...
+type 3 of criterion (e.g., the patient had error on 3 criteria in this frame)
+error for criterion 3
+0 (indicates the end of this frame)
+
+
+About type of gudiance/criteria:
+shoulder angle (right 1, right -1)
+elbow angle (right 2, left -2)
+elbow straight (right 3, left -3)
+knee angle (right 4, left -4)
+knee straight (right 5, left -5)
+leg angle/height (right 6, left -6)
+leg direction (right 7, left -7)
+arm direction: front (right 8, left -8)
+arm direction: lateral (right 9, left -9)
+trunk upright (11)
